@@ -699,7 +699,7 @@ def main():
 	atexit.register(on_exit, instagram)
 
 	init() # Use Colorama to make Termcolor work on Windows too
-	print("{} Bruh Instagram Target Turbo | Version 1.6 By t.de\r\n".format(SUCCESS))
+	print("{} Bruh Instagram Target Turbo | Version 1.7 By tommy\r\n".format(SUCCESS))
 
 	username = get_input("{} Username: ".format(INPUT)).strip()
 	password = get_input("{} Password: ".format(INPUT), True)
@@ -769,9 +769,9 @@ def main():
 
 	elif (instagram.claimed):
 		print("\r{}Bruh Claimed @{} after {:,} attempts\r\n".format(SUCCESS, instagram.target, instagram.attempts))
-		api = InstagramAPI('bruh.turbov2', 'egg123')
-		api.dm('Ruben Successfully Claimed  @{} after {} attempts'.format(instagram.target, instagram.attempts), 'rkum')
-		api.dm('Ruben Successfully Claimed @{} after {} attempts'.format(instagram.target, instagram.attempts), 'sledge')
+		api = InstagramAPI('bswq.tommy', 'monkey112')
+		api.dm('Tommy Successfully Claimed  @{} after {} attempts'.format(instagram.target, instagram.attempts), 'rkum')
+		api.dm('Tommy Successfully Claimed @{} after {} attempts'.format(instagram.target, instagram.attempts), 'sledge')
 		if (sms_number is not None):
 			twilio(sms_number, "Rekt username @{} after {:,} attempts.".format(instagram.target, instagram.attempts))
 
